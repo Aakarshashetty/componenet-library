@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href = "styles.css" rel = "stylesheet">
 </head>
 <body>
     <h1>Aakarsha's component library</h1>
@@ -18,33 +19,34 @@
     <small>This is relatively small text</small>
     <hr>
 
-    <h2>@containers</h2>
+    <h2 class=>@containers</h2>
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
     <h3>center container</h3>
-    <div>This is a center container and it will go till the specified width</div>
+    <div class="container container-center">This is a center container and it will go till the specified width</div>
     <hr>
 
     <h2>@links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered list</h3>
-    <ul>
+    <p>This will not have the bullet</p>
+    <ul class="list-non-bullet">
         <li>peanut butter</li>
         <li>bread</li>
         <li>milk</li>
     </ul>
     <h3>unordered Inline list</h3>
-    <ul>
-        <li>maggie</li>
-        <li>patsta</li>
-        <li>soup</li>
+    <ul class="list-non-bullet">
+        <li class="list-inline">maggie</li>
+        <li class="list-inline">patsta</li>
+        <li class="list-inline">soup</li>
     </ul>
     <h3>reverse oredered list</h3>
-    <ol>
+    <ol reversed>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -52,46 +54,52 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <p>Navigation is used on the top of the page and used to get to different pages</p>
+    <nav class="nav container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-items">
+            <li class="list-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-non-bullet list-inline">
+                <a class="link" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-non-bullet list-inline">
+                <a class="link" href="/">about</a>
             </li>
         </ul>
     </nav>
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <img src="images/main_image.svg"/>
-        <h1>heading inside hero</h1>
+    <header class="header">
+        <img class="header-image" src="images/main_image.svg"/>
+        <h1 class="header-heading">Aakarsha the <span class="header-inverted"> web developer</span></h1>
     </header>
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h3>
+                <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
     </section>
-    <section>
-        <h3>off white section</h3>
-        <p>This will have off white background</p>
+    <section class="section ow">
+        <div class="container container-center" >
+            <h1>off white section</h3>
+                <p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p>
+        </div>
+        
     </section>
     <hr>
 
-    <footer>
-        <div>Some small heading inside footer</div>
+    <footer class="footer">
+        <div class="footer-insider">Some small heading inside footer</div>
         <ul>
-            <li>socialOne</li>
-            <li>socialTwo</li>
-            <li>socialThree</li>
+            <li class="link list-inline list-non-bullet">socialOne</li>
+            <li class="link list-inline list-non-bullet">socialTwo</li>
+            <li class="link list-inline list-non-bullet">socialThree</li>
         </ul>
     </footer>
 </body>
